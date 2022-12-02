@@ -26,6 +26,14 @@ function calculateStarkInput(
     timestamp,
     chainID,
 ) {
+    console.log("currentStateRoot: " + currentStateRoot);
+    console.log("currentLocalExitRoot: " + currentLocalExitRoot);
+    console.log("newStateRoot: " + newStateRoot);
+    console.log("newLocalExitRoot: " + newLocalExitRoot);
+    console.log("batchHashData: " + batchHashData);
+    console.log("numBatch: " + numBatch);
+    console.log("timestamp: " + timestamp);
+    console.log("chainID: " + chainID);
     const currentStateRootHex = `0x${Scalar.e(currentStateRoot).toString(16).padStart(64, '0')}`;
     const currentLocalExitRootHex = `0x${Scalar.e(currentLocalExitRoot).toString(16).padStart(64, '0')}`;
     const newStateRootHex = `0x${Scalar.e(newStateRoot).toString(16).padStart(64, '0')}`;

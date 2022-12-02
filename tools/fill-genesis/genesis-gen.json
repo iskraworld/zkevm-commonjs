@@ -1,22 +1,22 @@
 
 {
-  "defaultChainId": 1000,
-  "sequencerAddress": "0xC949254d682D8c9ad5682521675b8F43b102aec4",
+  "defaultChainId": 1004,
+  "sequencerAddress": "0x4FCa6caD9B7d521fB8ADc225A635565350858AB6",
   "genesis": [
     {
-      "address": "0x9D98DeAbC42dd696Deb9e40b4f1CAB7dDBF55988",
+      "address": "0xD664123EBF33658Bd6336226415D86f63Ab3f375",
       "pvtKey": "0x00",
       "balance": "100000000000000000000000",
       "nonce": "0"
     },
     {
-      "address": "0xC949254d682D8c9ad5682521675b8F43b102aec4",
-      "pvtKey": "0xdfd01798f92667dbf91df722434e8fbe96af0211d4d1b82bbbbc8f1def7a814f",
-      "balance": "0",
+      "address": "0x4FCa6caD9B7d521fB8ADc225A635565350858AB6",
+      "pvtKey": "<private key>",
+      "balance": "1000000000000000000000000000",
       "nonce": "0"
     },
     {
-      "address": "0xf39Fd6e51aad88F6F4ce6aB8827279cffFb92266",
+      "address": "0xae4bb80be56b819606589de61d5ec3b522eeb032",
       "pvtKey": "0x00",
       "balance": "100000000000000000000000",
       "nonce": "0"
@@ -24,47 +24,47 @@
   ],
   "txs": [
     {
-      "from": "0xC949254d682D8c9ad5682521675b8F43b102aec4",
+      "from": "0x4FCa6caD9B7d521fB8ADc225A635565350858AB6",
       "nonce": 0,
       "value": "0",
       "gasLimit": 10000000,
       "gasPrice": "0",
-      "chainId": 1000,
+      "chainId": 1004,
       "paramsDeploy": {
         "types": [
           "address"
         ],
         "values": [
-          "0x9D98DeAbC42dd696Deb9e40b4f1CAB7dDBF55988"
+          "0xD664123EBF33658Bd6336226415D86f63Ab3f375"
         ]
       },
       "contractName": "GlobalExitRootManagerL2",
       "reason": ""
     },
     {
-      "from": "0xC949254d682D8c9ad5682521675b8F43b102aec4",
+      "from": "0x4FCa6caD9B7d521fB8ADc225A635565350858AB6",
       "nonce": 1,
       "value": "0",
       "gasLimit": 10000000,
       "gasPrice": "0",
-      "chainId": 1000,
+      "chainId": 1004,
       "contractName": "Bridge"
-      },
-      {
-        "from": "0xC949254d682D8c9ad5682521675b8F43b102aec4",
-        "to": "0x9D98DeAbC42dd696Deb9e40b4f1CAB7dDBF55988",
-        "nonce": 2,
-        "value": "0",
-        "gasLimit": 10000000,
-        "gasPrice": "0",
-        "chainId": 1000,
-        "function": "initialize",
-        "paramsFunction": [
-            1,
-            "0xAE4bB80bE56B819606589DE61d5ec3b522EEB032"
-        ],
-        "contractName": "Bridge"
-      }
+    },
+    {
+      "from": "0x4FCa6caD9B7d521fB8ADc225A635565350858AB6",
+      "to": "0xD664123EBF33658Bd6336226415D86f63Ab3f375",
+      "nonce": 2,
+      "value": "0",
+      "gasLimit": 10000000,
+      "gasPrice": "0",
+      "chainId": 1004,
+      "function": "initialize",
+      "paramsFunction": [
+          1,
+          "0xb8Ac34Afe854811B066b752B718074D355ed099d"
+      ],
+      "contractName": "Bridge"
+    }
   ],
-  "timestamp": 1944498031
+  "timestamp": 1669852800
 }

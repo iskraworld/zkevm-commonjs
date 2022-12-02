@@ -47,6 +47,7 @@ async function main() {
     const poseidon = await getPoseidon();
     const { F } = poseidon;
     const {
+        defaultChainId,
         genesis,
         txs,
         sequencerAddress,
@@ -62,6 +63,7 @@ async function main() {
         [F.zero, F.zero, F.zero, F.zero],
         smtUtils.stringToH4(localExitRoot),
         genesis,
+        defaultChainId
     );
 
     /*
@@ -183,6 +185,7 @@ async function main() {
         currentAccountOutput.balance = account.balance.toString();
         currentAccountOutput.nonce = account.nonce.toString();
         currentAccountOutput.address = address;
+        console.log("current address: " + address);
 
         // If account is a contract, update storage and bytecode
         if (account.isContract()) {

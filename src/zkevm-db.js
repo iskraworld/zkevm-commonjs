@@ -198,7 +198,7 @@ class ZkEVMDB {
      * @param {Number} chainID - L2 chainID
      * @returns {Object} ZkEVMDB object
      */
-    static async newZkEVM(db, poseidon, stateRoot, localExitRoot, genesis, vm, smt, chainID) {
+    static async newZkEVM(db, poseidon, stateRoot, localExitRoot, genesis, chainID, vm, smt) {
         const common = Common.custom({ chainId: chainID }, { hardfork: Hardfork.Berlin });
 
         const lastBatch = await db.getValue(Constants.DB_LAST_BATCH);
